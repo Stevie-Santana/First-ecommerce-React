@@ -1,0 +1,39 @@
+.navbar{
+    width: 100%;
+    
+    color: antiquewhite;
+    background-color: rgb(24, 109, 109);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.nav__list {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+  
+    
+}
+
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.nav__li {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    padding:1rem ;
+
+}
+
+.cartwidget {
+    display: flex;
+    flex-direction: row;
+}
