@@ -33,7 +33,9 @@
 
 }
 
-.cartwidget {
+.cart {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40px;
 }
