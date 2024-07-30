@@ -1,8 +1,36 @@
+
+.amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
 .news {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;    
-    background-color: rgb(23, 174, 164);
+    background-color: hsl(180, 2%, 9%);
     padding-top: 1rem;
 }
+.item-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-item{
+  display: flex;
+  flex-direction: column;
+}
+
+
