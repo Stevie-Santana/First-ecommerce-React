@@ -10,9 +10,9 @@ import {BrowserRouter, Routes, Route  } from "react-router-dom";
 
 function App() {
 
-//const agregarAlCarrito = (count) => {
-//console.log(count)
-//}
+const agregarAlCarrito = (count) => {
+console.log(count)
+}
 
   return (
       <BrowserRouter> 
