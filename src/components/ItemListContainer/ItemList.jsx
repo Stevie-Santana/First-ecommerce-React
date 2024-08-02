@@ -1,5 +1,5 @@
 import Item from "./Item"
-//import "./ItemList.css"
+import "./ItemListContainer.css"
 
 const ItemList = ( {productos} ) => { 
     return(
@@ -8,6 +8,6 @@ const ItemList = ( {productos} ) => {
           <Item key={producto.id} producto = {producto} />
         ))} 
         </div>
-    )
-}
+    );
+};
 export default ItemList; 

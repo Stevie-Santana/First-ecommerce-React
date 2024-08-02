@@ -7,10 +7,10 @@ const Item = ({producto}) => {
         <div className="info-item">
         <h3>{producto.name} </h3>
         <h4>{producto.autor} </h4>
-         <Link  to={"/detalle/" + producto.id } >Ver detalles</Link>
+         <Link className="button-detail" to={"/detalle/" + producto.id }>Ver detalles</Link>
         </div>
         </div> 
-    )
+    );
 };
 
 export default Item;

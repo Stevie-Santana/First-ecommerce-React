@@ -3,6 +3,7 @@
     min-height: 90vh;
     display: flex;
     padding: 50px 0;
+    font-family:  "Amatic SC", cursive;
   }
   .item-detail .image{
     width: 50%;
@@ -16,3 +17,5 @@
     width: 50%;
     margin: 0 50px;
   }
+
+ 

@@ -6,21 +6,21 @@
   
   .amatic-sc-bold {
     font-family: "Amatic SC", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 900;
+    font-style: bold;
   }
   
 
 
 .navbar{
     width: 100%;
-    
+    margin-bottom: 10px;
     color: rgb(17, 28, 38);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(186, 114, 139, 0.804);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    
 }
 
 .nav__list {
@@ -38,16 +38,16 @@
     align-items: flex-start;
     margin: 0;
 }
+
 .nav__li {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-between;
     padding:1rem ;
-    font-family:  "Amatic SC", cursive;
-    font-weight: bolder;
-
-
+    font-family: "Amatic SC", sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
     color: rgb(17, 28, 38);
     
 
@@ -57,9 +57,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 40px;
-<<<<<<< HEAD
+    height: 70px;
+    padding-top: 1rem;
 }
-=======
-}
->>>>>>> 7feda3297564ff1e6f68c09a5d5d7bde6fe5fe31

@@ -1,9 +1,9 @@
 import CartWidget from "./CartWidget"
 import logo from "./logo.png"
 import { Link } from "react-router-dom"
-
-
 import "./NavBar.css"
+
+
 
 const NavBar = () => {
     
@@ -15,11 +15,11 @@ const NavBar = () => {
 
             <ul className="nav__list">
                 <Link to="/category/cienciaficcion"  className="nav__li">
-                    <h2>Ciencia Ficción</h2>
+                    <p>Ciencia Ficción</p>
                 </Link>
 
                 <Link to="/category/novelanoir"  className="nav__li">
-                    <h2>Novela Noir</h2>
+                    <p>Novela Noir</p>
                 </Link>
                
             </ul>
