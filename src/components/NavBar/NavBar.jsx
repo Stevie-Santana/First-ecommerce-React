@@ -10,7 +10,7 @@ const NavBar = () => {
     return(
         <nav className="navbar">
             <div className="brand">
-             <Link to="/"><img src= {logo} alt="" /> </Link>
+             <Link to="/"><img src= {logo} alt="logo" /> </Link>
             </div>
 
             <ul className="nav__list">
@@ -21,12 +21,17 @@ const NavBar = () => {
                 <Link to="/category/novelanoir"  className="nav__li">
                     <p>Novela Noir</p>
                 </Link>
+
+                <Link to="/category/fantasiaEpica"  className="nav__li">
+                    <p>Fantasia Epica</p>
+                </Link>
                
             </ul>
  
 
 
             <CartWidget/>
+        
         </nav>
     )
 }

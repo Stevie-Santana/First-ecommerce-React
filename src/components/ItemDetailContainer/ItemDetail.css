@@ -3,19 +3,25 @@
     min-height: 90vh;
     display: flex;
     padding: 50px 0;
-    font-family:  "Amatic SC", cursive;
   }
   .item-detail .image{
     width: 50%;
     display: flex;
-    justify-content: center   ;
-  }
-  .item-detail .image img{
-    height: 70vh;
-  }
-  .item-detail .detail{
-    width: 50%;
-    margin: 0 50px;
+    justify-content: center;
   }
 
- 
+  .item-detail .image img {
+   height: 70vh;
+    
+  }
+  .item-detail .detail{
+    width: 70%;
+    margin: 0 50px;
+    font-family: "Cutive Mono", monospace;
+    text-decoration: none;
+  }
+
+.title { 
+  font-family:  "Amatic SC", cursive;
+
+}
