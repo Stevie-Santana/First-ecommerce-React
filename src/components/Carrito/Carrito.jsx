@@ -28,7 +28,9 @@ return (
             <p>cantidad: {productoCarrito.cantidad} </p>
             <p>precio c/u: ${productoCarrito.price} </p>
             <p>Precio parcial: {productoCarrito.price * productoCarrito.cantidad} </p>
-            <button onClick={() => borrarProducto(productoCarrito.id)}>Borrar</button> 
+
+            
+            <button onClick={() => borrarProductoPorId(productoCarrito.id)}>Borrar</button> 
             </div>
           ))}
 

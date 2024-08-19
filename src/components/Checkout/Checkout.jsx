@@ -1,9 +1,9 @@
 import { useState, useContext } from "react";
 import Formulario from "./Formulario";
 import { CartContext } from "../../Context/CartContext";
-
-//db
-//import { collection, addDoc } from "firebase/firestore";
+import db from "../../db/db.js";
+import { collection, addDoc } from "firebase/firestore";
+import validateForm from "../../utils/validacionFormulario.js"; 
 
 import "./Checkout.css";
 
