@@ -2,53 +2,58 @@ import { useState, useContext } from "react";
 import Formulario from "./Formulario";
 import { CartContext } from "../../Context/CartContext";
 import db from "../../db/db.js";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 import validateForm from "../../utils/validacionFormulario.js"; 
 
 import "./Checkout.css";
 
 const Checkout = () => {
-  const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
   const [datosForm, setDatosForm] = useState(
     {
         nombre: "",
         telefono: "",
         email: "",
     });
-    const [idOrden, setIdOrden] = useState(null);
 
-    const guardrDatosInput = (event) => {
+
+    const [idOrden, setIdOrden] = useState(null);
+    const { carrito, precioTotal } = useContext(CartContext);
+
+
+    const handleChangeInput = (event) => {
         setDatosForm({...datosForm, [event.target.name]: event.target.value });
     };
 
-    const enviarOrden = async(event) => {
+    const handleSubmitForm = async(event) => {
         event.preventDefault();
         //formatear la orden
-        const datos = {
+        const orden = {
             comprador: { ...datosForm},
             productos: [...carrito],
             total: precioTotal(), 
         }; 
+
+
         //validar formulario previo a subir la orden
         const response = await validateForm(datosForm)
         if(response.status === "success"){
             //subir la orden
-            subirOrden(datos);
+            subirOrden(orden);
         }else{
             //toast alert de libreria
             console.log(response.message);
         }
     };
 
-    const subirOrden = (datos) => {
-        const ordenRef = collection(db, "ordenes");
-        addDoc(ordenRef, datos)
-        .then((respuesta) => {
-            setIdOrden(respuesta.id);
-        })
-        .finally(() => {
-            vaciarCarrito()
-        })
+    const subirOrden = async (orden) =>  {  
+        try {
+            const ordenesRef = collection(db, "ordenes");
+            const ordenDb = await addDoc(ordenesRef, orden);
+            setIdOrden(ordenDb.id);
+        }  catch (error) {
+                console.error(error);
+            }
+       
     };
 
     return (
@@ -61,8 +66,8 @@ const Checkout = () => {
             ) : (
                 <Formulario
                 datosForm={datosForm}
-                guardrDatosInput={guardrDatosInput}
-                enviarOrden={enviarOrden}
+                handleChangeInput={handleChangeInput}
+                handleSubmitForm={handleSubmitForm}
                 />
             )}
         </div>

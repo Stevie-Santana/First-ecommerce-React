@@ -1,0 +1,80 @@
+.cart {
+    display: flex;
+    align-items: center;
+    font-family:  "Cutive Mono", monospace;
+
+}
+
+.cart-title {
+    font-family: "Klee monospace", system-ui;
+
+    display: flex;  
+    text-align: left;
+    font-size: 1.5rem;
+
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+
+}
+
+
+
+.cart-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    display: flex;
+    font-family:  "Cutive Mono", monospace;
+
+    
+
+}
+
+.delete {
+    border: 2px solid rgb(134, 177, 27);
+    border-radius: 5px;
+    width: 100px;
+  
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgb(198, 138, 34);
+    
+    font-family: "Cutive Mono", monospace;
+    font-size: small;
+    text-decoration: none;
+    margin-bottom: 1%;
+    
+
+
+}
+.empty-cart {
+    border: 2px solid rgb(134, 177, 27);
+    border-radius: 5px;
+    padding-top: 1%;
+    margin-top: 10px;
+    width: 130PX;
+
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgb(198, 138, 34);
+  
+    font-family: "Cutive Mono", monospace;
+    text-decoration: none;
+    font-size: small;
+}
+
+.continue-cart {
+    display: flex;
+    justify-content: center;
+    color: rgb(21, 172, 122);
+    border:  2px solid rgb(153, 161, 131);
+    border-radius: 8px;
+    width: 300px;
+    padding-top: 2%;
+    font-family: "Cutive Mono", monospace;
+    text-decoration: none;
+
+}

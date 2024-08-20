@@ -10,9 +10,9 @@ const Carrito = () => {
 
     if (carrito.length === 0) {
         return (
-            <div className="container">
-                <h2>El carrito esta vacio</h2>
-                <Link to="/">Ver productos</Link>
+            <div className="cart">
+                <h5>El carrito esta vacio</h5>
+                <Link className="continue-cart" to="/"><p>Ver productos</p></Link>
             </div>
         );
     }
@@ -20,25 +20,31 @@ const Carrito = () => {
 
 return (
     <div className="cart">
-        <h2>Carrito de compras</h2>
+        <div className="cart-title"><p>RESUMEN DE COMPRAS</p></div>
+               
+
+        <div className="cart-detail">
         {carrito.map((productoCarrito) => (
             <div className="card-cart" key={productoCarrito.id} >
-            <img src={productoCarrito.img} alt="" />
-            <h3>{productoCarrito.name}</h3>
+            <img width={150} src={productoCarrito.img} alt="" />
+            <h5>{productoCarrito.name}</h5>
             <p>cantidad: {productoCarrito.cantidad} </p>
             <p>precio c/u: ${productoCarrito.price} </p>
             <p>Precio parcial: {productoCarrito.price * productoCarrito.cantidad} </p>
 
             
-            <button onClick={() => borrarProductoPorId(productoCarrito.id)}>Borrar</button> 
+            <button className="delete" onClick={() => borrarProductoPorId(productoCarrito.id)}>Borrar</button> 
             </div>
           ))}
 
-          <p>Precio Total: {precioTotal()} </p>
-          <button onClick={ vaciarCarrito }>
+        </div>
+        <h5>Precio Total: {precioTotal()} </h5>
+          <button className="empty-cart" onClick={ vaciarCarrito }>
             <p>Vaciar carrito</p>
           </button>
-          <link className="continue-cart" to="/checkout">Continuar con la compra</link>
+          <div className="resume">
+          <Link className="continue-cart" to="/checkout"><h6>Continuar con la compra</h6></Link>
+          </div>
         </div>
 
         );

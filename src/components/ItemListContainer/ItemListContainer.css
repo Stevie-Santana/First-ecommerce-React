@@ -41,7 +41,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  font-family: "Amatic SC", sans-serif;
+  font-family: "Klee monospace", system-ui;
 }
 
 .card-item{
@@ -73,8 +73,8 @@
 .info-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 8rem;
+  justify-content: flex-end;
+  height: 10rem;
 
 
   

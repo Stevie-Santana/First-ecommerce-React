@@ -5,8 +5,8 @@ const Item = ({producto}) => {
         <div className="item" > 
         <img width={200} src= {producto.img} alt="" />
         <div className="info-item">
-        <h3>{producto.name} </h3>
-        <h4>{producto.autor} </h4>
+        <h5>{producto.name} </h5>
+        <p>{producto.autor} </p>
          <Link className="button-detail" to={"/detalle/" + producto.id }>Ver detalles</Link>
         </div>
         </div> 

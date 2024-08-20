@@ -2,7 +2,9 @@
     width: 100%;
     min-height: 90vh;
     display: flex;
+    
     padding: 2% 0;
+
   }
   .item-detail .image{
     width: 50%;
@@ -19,9 +21,50 @@
     margin: 0 50px;
     font-family: "Cutive Mono", monospace;
     text-decoration: none;
+    flex-wrap: wrap;
   }
 
 .title { 
-  font-family:  "Amatic SC", cursive;
+  font-family: "Klee One", system-ui;
 
 }
+
+
+.count {
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+}
+
+
+.rest-add-button {
+  border: 2px solid rgb(134, 177, 27);
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, 0.03);
+  color: rgb(198, 138, 34);
+  
+  font-family: "Cutive Mono", monospace;
+  text-decoration: none;
+  
+  display: flex;
+  padding: 0 1%;
+  margin-bottom: 2rem;
+  }
+
+.add-button {
+    border: 2px solid rgb(134, 177, 27);
+    border-radius: 5px;
+  
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgb(198, 138, 34);
+    
+    font-family: "Cutive Mono", monospace;
+    text-decoration: none;
+    
+    width: 250px;
+    display: flex;
+    justify-content: center;
+  
+  }

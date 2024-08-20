@@ -15,15 +15,15 @@ const NavBar = () => {
 
             <ul className="nav__list">
                 <Link to="/category/cienciaficcion"  className="nav__li">
-                    <p>Ciencia Ficción</p>
+                    <p>CIENCIA FICCION</p>
                 </Link>
 
                 <Link to="/category/novelanoir"  className="nav__li">
-                    <p>Novela Noir</p>
+                    <p>NOVELA NOIR</p>
                 </Link>
 
                 <Link to="/category/fantasiaEpica"  className="nav__li">
-                    <p>Fantasia Epica</p>
+                    <p>FANTASIA EPICA</p>
                 </Link>
                
             </ul>

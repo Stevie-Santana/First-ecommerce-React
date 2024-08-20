@@ -9,6 +9,8 @@ const CartProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([]);
 
     const agregarProductos = (producto) => {
+        console.log('Producto que se intenta agregar:', producto);
+
         const condicion = estaEnElCarrito(producto.id);
 
         if (condicion) {
