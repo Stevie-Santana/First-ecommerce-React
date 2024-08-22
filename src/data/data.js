@@ -83,7 +83,7 @@ const productos = [
     //Novela Noir
       {
         id: "7",
-        img: "/public/img/novelaNoir/img_07.png",
+        img: "/img/novelaNoir/img_07.png",
         name: " Papá querido.",
         autor: "Cynthia Wila",
         year: "2021",
