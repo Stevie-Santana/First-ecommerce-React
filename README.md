@@ -21,4 +21,6 @@
 
 <img src="./public/img/screenshot.svg"/>
 
+Deploy Netlify: https://dreamfyre-bookshop.netlify.app
+
 
