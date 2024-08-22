@@ -1,39 +1,78 @@
 .cart {
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     font-family:  "Cutive Mono", monospace;
+    color: antiquewhite;   
 
 }
 
-.cart-title {
-    font-family: "Klee monospace", system-ui;
+.card-cart   {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;   
+    padding: 12px;
+    margin: 20px 20px;
+    color: aliceblue;      
+    border: 2px solid rgb(134, 177, 27);
+    border-radius: 5px;
+    background-color: rgba(9, 8, 8, 0.353);
 
+        
+}
+
+
+.cart-title  {
+    height: 100%;
+    font-family:  "Cutive Mono", monospace;
     display: flex;  
-    text-align: left;
-    font-size: 1.5rem;
+    flex-direction: row;
+    margin-top: 50px;
+    color: rgb(198, 138, 34);
+}
 
+.cart__empty {
+    height: 70vh;
+    font-family:  "Cutive Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 17% 0%;
 }
 
 .resume {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 2%;
 
 }
 
 
 
-.cart-detail {
+.cart-detail  {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 2%;
+    padding: 2vh;
+    margin-right: 0 10px;
     display: flex;
     font-family:  "Cutive Mono", monospace;
-
-    
-
+    color: aliceblue;
 }
+
+.cart-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+/**buttons**/  
 
 .delete {
     border: 2px solid rgb(134, 177, 27);
@@ -44,37 +83,34 @@
     color: rgb(198, 138, 34);
     
     font-family: "Cutive Mono", monospace;
-    font-size: small;
+    font-size: smaller;
     text-decoration: none;
-    margin-bottom: 1%;
-    
-
-
 }
-.empty-cart {
+
+.empty-cart  {
     border: 2px solid rgb(134, 177, 27);
     border-radius: 5px;
-    padding-top: 1%;
-    margin-top: 10px;
-    width: 130PX;
 
     background-color: rgba(0, 0, 0, 0.03);
     color: rgb(198, 138, 34);
   
     font-family: "Cutive Mono", monospace;
     text-decoration: none;
-    font-size: small;
+    font-size: 13px;
+    padding: 7px 7px 0 7px;
+   
 }
 
 .continue-cart {
     display: flex;
     justify-content: center;
-    color: rgb(21, 172, 122);
+    color:rgb(134, 177, 27);
     border:  2px solid rgb(153, 161, 131);
-    border-radius: 8px;
-    width: 300px;
+    border-radius: 5px;
+    width: 220px;
     padding-top: 2%;
     font-family: "Cutive Mono", monospace;
     text-decoration: none;
+    margin: 0 1rem 0 1rem;
 
 }

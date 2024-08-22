@@ -1,0 +1,64 @@
+.footer {
+    background-color: #73863c;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .footer__brand {
+    margin: 5px;
+  }
+  
+  .footer__brand  {
+    font-family: "Klee One", system-ui; 
+    padding-bottom: 5px;
+  }
+  
+
+
+  
+  .footer__links ul,
+  .footer__socials ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__links li,
+  .footer__socials li {
+    margin-bottom: 8px;
+  }
+  
+  .footer__links a,
+  .footer__socials a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+ 
+  
+  .footer__contact p {
+    margin-bottom: 8px;
+    font-family: "Klee One", system-ui; 
+
+  }
+  
+  .footer__socials ul {
+    display: flex;
+    gap: 15px;
+  }
+  
+  

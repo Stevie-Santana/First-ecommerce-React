@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget"
-import logo from "./logo.png"
+import logoR from "./logoR.png"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
 
@@ -10,20 +10,20 @@ const NavBar = () => {
     return(
         <nav className="navbar">
             <div className="brand">
-             <Link to="/"><img src= {logo} alt="logo" /> </Link>
+             <Link to="/"><img src= {logoR} alt="logo" /> </Link>
             </div>
 
             <ul className="nav__list">
                 <Link to="/category/cienciaficcion"  className="nav__li">
-                    <p>CIENCIA FICCION</p>
+                    <h5>CIENCIA FICCION</h5>
                 </Link>
 
                 <Link to="/category/novelanoir"  className="nav__li">
-                    <p>NOVELA NOIR</p>
+                    <h5>NOVELA NOIR</h5>
                 </Link>
 
                 <Link to="/category/fantasiaEpica"  className="nav__li">
-                    <p>FANTASIA EPICA</p>
+                    <h5>FANTASIA EPICA</h5>
                 </Link>
                
             </ul>

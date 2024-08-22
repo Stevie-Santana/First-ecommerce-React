@@ -4,7 +4,7 @@ import { CartContext } from "../../Context/CartContext";
 import db from "../../db/db.js";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import validateForm from "../../utils/validacionFormulario.js"; 
-
+import {toast } from "react-toastify";
 import "./Checkout.css";
 
 const Checkout = () => {
@@ -17,7 +17,7 @@ const Checkout = () => {
 
 
     const [idOrden, setIdOrden] = useState(null);
-    const { carrito, precioTotal } = useContext(CartContext);
+    const { carrito, precioTotal, vaciarCarrito} = useContext(CartContext);
 
 
     const handleChangeInput = (event) => {
@@ -30,6 +30,7 @@ const Checkout = () => {
         const orden = {
             comprador: { ...datosForm},
             productos: [...carrito],
+            fecha: Timestamp.fromDate(new Date()),
             total: precioTotal(), 
         }; 
 
@@ -40,8 +41,7 @@ const Checkout = () => {
             //subir la orden
             subirOrden(orden);
         }else{
-            //toast alert de libreria
-            console.log(response.message);
+            toast.warning(response.message);
         }
     };
 
@@ -49,7 +49,7 @@ const Checkout = () => {
         try {
             const ordenesRef = collection(db, "ordenes");
             const ordenDb = await addDoc(ordenesRef, orden);
-            setIdOrden(ordenDb.id);
+            setIdOrden(ordenDb.id);   
         }  catch (error) {
                 console.error(error);
             }
@@ -62,7 +62,7 @@ const Checkout = () => {
                 <div>
                     <h3>¡Orden realizada con exito!</h3>
                     <p>Codigo de orden: {idOrden} </p>
-                </div>
+                </div>               
             ) : (
                 <Formulario
                 datosForm={datosForm}

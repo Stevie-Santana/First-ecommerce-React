@@ -1,38 +1,56 @@
+.klee-one-regular {
+  font-family: "Klee One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.klee-one-semibold {
+  font-family: "Klee One", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 .item-detail{
-    width: 100%;
+    width: 80%;
     min-height: 90vh;
     display: flex;
-    
+    justify-content: flex-s;
+    font-family: "Klee One", system-ui; 
     padding: 2% 0;
 
   }
-  .item-detail .image{
-    width: 50%;
+ .image{
+    width: 90vh;
     display: flex;
     justify-content: center;
+    align-items: center; 
+    padding-bottom: 7%;
+
   }
 
-  .item-detail .image img {
+  .item-detail {
     width: 70hv;
     
   }
   .item-detail .detail{
     width: 70%;
-    margin: 0 50px;
+    margin: 50px 50px;
+    
     font-family: "Cutive Mono", monospace;
     text-decoration: none;
     flex-wrap: wrap;
   }
 
 .title { 
-  font-family: "Klee One", system-ui;
-
+  font-family: "Klee One", system-ui; 
 }
 
 
 .count {
   display: flex;
   justify-content: space-evenly;
+  color: antiquewhite;
   
   
 }
@@ -67,4 +85,18 @@
     display: flex;
     justify-content: center;
   
+  }
+  .button-detail  {
+    border: 2px solid rgb(134, 177, 27);
+    border-radius: 5px;
+  
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgb(198, 138, 34);
+
+    display: flex;
+    justify-content: center;
+    
+    font-family: "Cutive Mono", monospace;
+    text-decoration: none;
+    padding: 0 3%;
   }

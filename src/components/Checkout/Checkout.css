@@ -1,8 +1,9 @@
-.checkout {
+.checkout  {
     display: flex;
     align-items:  center;
     flex-direction: column;
     padding-top: 5%;
+    height: 70vh;
     font-family: "Cutive Mono", monospace;
 
 }
@@ -10,6 +11,9 @@
 .checkout-form {
     display: flex;
     flex-direction: column;
+    padding-bottom: 5%;
+    color:  rgb(198, 138, 34);
+    
     
 }
 

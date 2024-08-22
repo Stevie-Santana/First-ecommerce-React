@@ -1,8 +1,8 @@
 import { CartContext } from "../../Context/CartContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { FaWeightHanging } from "react-icons/fa";
 import "./NavBar.css";
-import bag from "./bag.png"
 
 const CartWidget = () => {
     
@@ -12,8 +12,8 @@ const CartWidget = () => {
 
     return (
         <Link to="/carrito" className="cartwidget">
-          <img  className="cart" src= {bag}  alt="" />
-            <p className="count">{ cantidad > 0 && cantidad }</p>
+          <FaWeightHanging size={40}/>
+            <p className="count-shown">{ cantidad > 0 && cantidad }</p>
         </Link>
     )
 }

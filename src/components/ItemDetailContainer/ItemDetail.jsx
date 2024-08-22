@@ -28,12 +28,12 @@ const ItemDetail = ({ producto }) => {
             <p>{producto.autor} </p>
             <p>{producto.year} </p>
             <p>{producto.description}</p>
-            <p>{producto.price}</p>
+            <p>$ {producto.price}</p>
 
             {mostrarItemCount ? ( 
-            <ItemCount agregarAlCarrito={agregarAlCarrito}/>
+            <ItemCount  stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>
         ) : ( 
-            <Link to="/carrito"> Ir al carrito</Link>
+            <Link className="button-detail" to="/carrito"> Ir al carrito</Link>
          ) } </div>
         </div>
     );

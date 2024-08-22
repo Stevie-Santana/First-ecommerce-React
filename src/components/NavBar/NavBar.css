@@ -9,28 +9,29 @@
     font-weight: 600;
     font-style: normal;
   }
-  
-.navbar{
-    width: 100%;
-    padding: 2%;
-    margin-bottom: 10px;
-    color: black;
-    background-color: #e2e23579;
+
+
+nav.navbar{
+    font-family: "Klee One", system-ui;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    
-    
+    padding: 2rem 0 1rem 0;
+    color: rgba(255, 255, 255, 0.994);
+    background-color: #73863c ;
 }
 
 .nav__list {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    font-family: "Klee monospace", system-ui;
-    
-  
-    
+    align-items: center;
+    font-family: "Klee One", system-ui;  
+    padding: 0 100px 0 100px; 
+      
 }
 
 
@@ -38,8 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0;
-    padding-left: 4%;
+    margin: 0;  
 }
 
 .nav__li {
@@ -47,30 +47,26 @@
     flex-direction: row;
     text-decoration: none;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding:1rem ;
-    
-
-
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(17, 28, 38);
-    
+    color: rgb(9, 8, 8);   
 
 }
 
-.cart {
+.cartwidget {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70px;
-    padding-top: 1rem;
+    color: rgba(9, 8, 8) ;
+    padding: 5vh;
 }
 
+.count-shown {
+    color: rgb(38, 25, 43);
+    text-decoration: none;
+}
 .count p {
     font-family: "Klee One", system-ui;
-
     text-decoration: none;
-    color: azure;
-
-
+    color: rgb(104, 142, 88);
 }

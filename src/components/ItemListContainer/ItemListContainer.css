@@ -1,25 +1,6 @@
-
-.amatic-sc-regular {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .amatic-sc-bold {
-    font-family: "Amatic SC", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-
-  .sue-ellen-francisco-regular {
-    font-family: "Sue Ellen Francisco", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
   
   .cutive-mono-regular {
-    font-family: "Cutive Mono", monospace;
+    font-family: "Klee monospace", system-ui;       
     font-weight: 400;
     font-style: normal;
   }
@@ -41,18 +22,19 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  font-family: "Klee monospace", system-ui;
+  font-family: "Klee One", system-ui;         
 }
 
 .card-item{
   display: flex;
   flex-direction: column;
   height: 300px;
+  font-family: "Klee monospace", system-ui;    
   
   
 }
 
-.item{
+.item {
   width: 20%;
   height: auto;
   margin: 0 2%;
@@ -68,33 +50,33 @@
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
+  
 }
 
-.info-item {
+.info-item  {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   height: 10rem;
+  font-family: "Klee One", system-ui;          
 
 
   
 }
 
-.button-detail {
+.button-detail a {
   border: 2px solid rgb(134, 177, 27);
   border-radius: 5px;
+ 
 
   background-color: rgba(0, 0, 0, 0.03);
   color: rgb(198, 138, 34);
   
   font-family: "Cutive Mono", monospace;
+  
   text-decoration: none;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  
+  margin-bottom: 1%;
  
 
 }
