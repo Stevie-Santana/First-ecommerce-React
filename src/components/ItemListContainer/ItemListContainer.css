@@ -16,7 +16,7 @@
 }
 
 
-.item-list{
+.item-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -35,7 +35,6 @@
 }
 
 .item {
-  width: 20%;
   height: auto;
   margin: 0 2%;
   margin-top: 20px;
